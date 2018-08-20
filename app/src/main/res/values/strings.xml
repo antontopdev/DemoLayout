@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DemoForex</string>
+    
+    <!-- Menu -->
+    <string name="unsuccessful_deals">Неудачные сделки</string>
+    <string name="big_loss">Крупная потеря</string>
 </resources>

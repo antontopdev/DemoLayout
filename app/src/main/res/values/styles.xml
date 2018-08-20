@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CloseButton">
+        <item name="android:textColor">@color/white_alpha_50</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/bg_btn_close</item>
+    </style>
+
 </resources>

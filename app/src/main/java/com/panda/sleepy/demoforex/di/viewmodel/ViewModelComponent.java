@@ -1,5 +1,7 @@
 package com.panda.sleepy.demoforex.di.viewmodel;
 
+import com.panda.sleepy.demoforex.viewmodel.TransitionViewModel;
+
 import dagger.Subcomponent;
 
 /*
@@ -12,5 +14,7 @@ public interface ViewModelComponent {
     interface Builder {
         ViewModelComponent build();
     }
+
+    TransitionViewModel transitionViewModel();
 
 }

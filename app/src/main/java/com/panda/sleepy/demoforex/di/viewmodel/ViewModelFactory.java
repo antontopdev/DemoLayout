@@ -5,6 +5,8 @@ import android.arch.lifecycle.ViewModelProvider;
 import android.support.annotation.NonNull;
 import android.support.v4.util.ArrayMap;
 
+import com.panda.sleepy.demoforex.viewmodel.TransitionViewModel;
+
 import java.util.Map;
 import java.util.concurrent.Callable;
 
@@ -20,6 +22,7 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
     @Inject
     public ViewModelFactory(ViewModelComponent component) {
         creators = new ArrayMap<>();
+        creators.put(TransitionViewModel.class, component::transitionViewModel);
     }
 
     @NonNull

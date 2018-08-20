@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="ebony">#060B14</color>
+
+    <color name="calypso_alpha_20">#332e687d</color>
+
+    <color name="white_alpha_50">#80ffffff</color>
+    <color name="white_alpha_57">#92FFFFFF</color>
+
 </resources>
