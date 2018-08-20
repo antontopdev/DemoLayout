@@ -1,10 +1,12 @@
 package com.panda.sleepy.demoforex.app;
 
+import android.databinding.DataBindingUtil;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.panda.sleepy.demoforex.R;
+import com.panda.sleepy.demoforex.databinding.ActivityMainBinding;
 
 import javax.inject.Inject;
 
@@ -21,12 +23,14 @@ public class MainActivity extends AppCompatActivity implements HasSupportFragmen
     @Inject
     protected DispatchingAndroidInjector<Fragment> fragmentInjector;
 
+    private ActivityMainBinding binding;
+
     // Lifecycle methods
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
     }
 
     // HasSupportFragmentInjector methods.
