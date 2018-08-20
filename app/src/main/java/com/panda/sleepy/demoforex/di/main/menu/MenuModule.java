@@ -3,7 +3,7 @@ package com.panda.sleepy.demoforex.di.main.menu;
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 
-import com.panda.sleepy.demoforex.app.screen.MenuFragment;
+import com.panda.sleepy.demoforex.app.screen.menu.MenuFragment;
 import com.panda.sleepy.demoforex.viewmodel.TransitionViewModel;
 
 import dagger.Module;

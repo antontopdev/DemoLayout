@@ -1,4 +1,4 @@
-package com.panda.sleepy.demoforex.app.screen;
+package com.panda.sleepy.demoforex.app.screen.menu;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

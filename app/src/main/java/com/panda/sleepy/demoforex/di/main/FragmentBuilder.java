@@ -2,7 +2,7 @@ package com.panda.sleepy.demoforex.di.main;
 
 import android.support.v4.app.Fragment;
 
-import com.panda.sleepy.demoforex.app.screen.MenuFragment;
+import com.panda.sleepy.demoforex.app.screen.menu.MenuFragment;
 import com.panda.sleepy.demoforex.di.main.menu.MenuComponent;
 
 import dagger.Binds;

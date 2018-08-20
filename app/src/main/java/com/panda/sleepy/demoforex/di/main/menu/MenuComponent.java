@@ -1,6 +1,6 @@
 package com.panda.sleepy.demoforex.di.main.menu;
 
-import com.panda.sleepy.demoforex.app.screen.MenuFragment;
+import com.panda.sleepy.demoforex.app.screen.menu.MenuFragment;
 
 import dagger.Subcomponent;
 import dagger.android.AndroidInjector;

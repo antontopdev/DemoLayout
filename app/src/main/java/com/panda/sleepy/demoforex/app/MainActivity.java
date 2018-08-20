@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.panda.sleepy.demoforex.R;
-import com.panda.sleepy.demoforex.app.screen.MenuFragment;
+import com.panda.sleepy.demoforex.app.screen.menu.MenuFragment;
 import com.panda.sleepy.demoforex.databinding.ActivityMainBinding;
 import com.panda.sleepy.demoforex.viewmodel.TransitionViewModel;
 
