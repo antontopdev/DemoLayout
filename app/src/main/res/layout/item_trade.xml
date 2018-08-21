@@ -14,13 +14,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="4dp"
-        android:paddingBottom="4dp">
+        android:paddingBottom="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
 
         <TextView
             android:id="@+id/tradeUp"
             style="@style/SmallText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:text="@{data.up}"
             android:textColor="@android:color/white"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,6 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{data.down}"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             app:layout_constraintTop_toBottomOf="@id/tradeDivider" />
 
         <ImageView
