@@ -3,6 +3,8 @@
     <dimen name="font.small">12sp</dimen>
     <dimen name="font.medium">14sp</dimen>
     <dimen name="font.large">16sp</dimen>
-    <dimen name="font.xlarge">22sp</dimen>
-    <dimen name="font.xxlarge">30sp</dimen>
+    <dimen name="font.xlarge">18sp</dimen>
+    <dimen name="font.xxlarge">22sp</dimen>
+    <dimen name="font.xxxlarge">30sp</dimen>
+    <dimen name="font.mega">48sp</dimen>
 </resources>

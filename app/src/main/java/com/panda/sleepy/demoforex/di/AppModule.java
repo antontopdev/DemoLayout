@@ -3,8 +3,10 @@ package com.panda.sleepy.demoforex.di;
 import android.arch.lifecycle.ViewModelProvider;
 
 import com.panda.sleepy.demoforex.app.DemoApp;
+import com.panda.sleepy.demoforex.app.screen.loss.BigLossActivity;
 import com.panda.sleepy.demoforex.di.main.MainActivityComponent;
 import com.panda.sleepy.demoforex.di.main.deals.DealsComponent;
+import com.panda.sleepy.demoforex.di.main.loss.BigLossComponent;
 import com.panda.sleepy.demoforex.di.viewmodel.ViewModelComponent;
 import com.panda.sleepy.demoforex.di.viewmodel.ViewModelFactory;
 import com.panda.sleepy.demoforex.util.InjectionHandler;
@@ -23,7 +25,8 @@ import dagger.Provides;
  */
 @Module(subcomponents = {MainActivityComponent.class,
         ViewModelComponent.class,
-        DealsComponent.class})
+        DealsComponent.class,
+        BigLossComponent.class})
 public class AppModule {
 
     @Provides

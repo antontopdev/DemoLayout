@@ -23,8 +23,11 @@
 
         <activity
             android:name=".app.screen.deals.DealsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/ActivityDialogTheme" />
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".app.screen.loss.BigLossActivity"
+            android:screenOrientation="portrait" />
 
     </application>
 

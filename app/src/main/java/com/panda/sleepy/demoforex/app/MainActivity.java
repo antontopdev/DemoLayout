@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.panda.sleepy.demoforex.R;
 import com.panda.sleepy.demoforex.app.screen.deals.DealsActivity;
+import com.panda.sleepy.demoforex.app.screen.loss.BigLossActivity;
 import com.panda.sleepy.demoforex.app.screen.menu.MenuFragment;
 import com.panda.sleepy.demoforex.databinding.ActivityMainBinding;
 import com.panda.sleepy.demoforex.util.BaseActivity;
@@ -55,7 +56,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements H
 
     private void setEventHandlers() {
         viewModel.getOpenDealsEvent().observe(this, aVoid -> openDialog(DealsActivity.class));
-        viewModel.getOpenBigLossEvent().observe(this, aVoid -> showToast("Big loss"));
+        viewModel.getOpenBigLossEvent().observe(this, aVoid -> openDialog(BigLossActivity.class));
     }
 
     // Additional methods

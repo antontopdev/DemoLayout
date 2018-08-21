@@ -32,7 +32,7 @@
         <item name="android:maxLines">2</item>
         <item name="autoSizeTextType">uniform</item>
         <item name="autoSizeMinTextSize">@dimen/font.large</item>
-        <item name="autoSizeMaxTextSize">@dimen/font.xlarge</item>
+        <item name="autoSizeMaxTextSize">@dimen/font.xxlarge</item>
     </style>
 
     <style name="SmallText" parent="Text">
@@ -40,19 +40,35 @@
     </style>
 
     <style name="InfoText" parent="Text">
-        <item name="android:textSize">@dimen/font.medium</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">@dimen/font.small</item>
+        <item name="autoSizeMaxTextSize">@dimen/font.medium</item>
     </style>
 
     <style name="LargeText" parent="Text">
         <item name="android:textSize">@dimen/font.large</item>
     </style>
 
+    <style name="xLargeText" parent="Text">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">@dimen/font.large</item>
+        <item name="autoSizeMaxTextSize">@dimen/font.xlarge</item>
+    </style>
+
     <style name="BigText" parent="Text">
-        <item name="android:textSize">@dimen/font.xxlarge</item>
+        <item name="android:textSize">@dimen/font.xxxlarge</item>
     </style>
 
     <style name="Link" parent="InfoText">
         <item name="android:textColor">@color/picton_blue</item>
+    </style>
+
+    <style name="Attention" parent="Text">
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">@dimen/font.large</item>
+        <item name="autoSizeMaxTextSize">@dimen/font.mega</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
 </resources>

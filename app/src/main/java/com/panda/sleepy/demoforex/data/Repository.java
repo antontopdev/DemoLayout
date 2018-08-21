@@ -32,4 +32,13 @@ public class Repository {
         return result;
     }
 
+    /**
+     * Generates dummy data for BigLossActivity.
+     *
+     * @return - dummy LossModel object.
+     */
+    public LossModel getLoss() {
+        return new LossModel(600, 30, 500);
+    }
+
 }

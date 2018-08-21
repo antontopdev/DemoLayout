@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="contentDescription">
+
+    <data>
+
+        <variable
+            name="handler"
+            type="com.panda.sleepy.demoforex.viewmodel.BigLossViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ebony">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <View
+                android:id="@+id/background"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/main_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/layout_header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="@id/background"
+                app:layout_constraintStart_toStartOf="@id/background"
+                app:layout_constraintTop_toTopOf="parent"
+                bind:title="@{@string/big_loss_title}" />
+
+            <ImageView
+                android:id="@+id/coin"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/coin"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="@id/background"
+                app:layout_constraintTop_toBottomOf="@id/header"
+                app:layout_constraintWidth_percent="0.35" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@id/coin"
+                app:layout_constraintDimensionRatio="1:0.35"
+                app:layout_constraintEnd_toEndOf="@id/background"
+                app:layout_constraintHorizontal_bias="0.43"
+                app:layout_constraintStart_toStartOf="@id/coin"
+                app:layout_constraintTop_toBottomOf="@id/header"
+                app:layout_constraintVertical_bias="0.17"
+                app:layout_constraintWidth_percent="0.45" />
+
+            <TextView
+                android:id="@+id/lossValue"
+                style="@style/Attention"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/empty_loss"
+                loss="@{handler.loss.loss}"
+                app:layout_constraintVertical_bias="0.5"
+                app:layout_constraintWidth_percent="0.4"
+                app:layout_constraintDimensionRatio="1:0.35"
+                app:layout_constraintBottom_toBottomOf="@id/coin"
+                app:layout_constraintStart_toEndOf="@id/coin"
+                app:layout_constraintTop_toTopOf="@id/arrow" />
+
+            <TextView
+                android:id="@+id/lossValuePercent"
+                style="@style/InfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_loss_percent"
+                loss_percent="@{handler.loss.percent}"
+                loss_message="@{@string/loss_percent}"
+                app:layout_constraintVertical_bias="0"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintBottom_toBottomOf="@id/coin"
+                app:layout_constraintEnd_toEndOf="@id/lossValue"
+                app:layout_constraintStart_toStartOf="@id/lossValue"
+                app:layout_constraintTop_toBottomOf="@id/lossValue" />
+
+            <TextView
+                android:id="@+id/soros"
+                style="@style/InfoText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/big_loss_soros"
+                app:layout_constraintDimensionRatio="h,1:0.25"
+                app:layout_constraintEnd_toEndOf="@id/background"
+                app:layout_constraintStart_toStartOf="@id/background"
+                app:layout_constraintTop_toBottomOf="@id/coin"
+                app:layout_constraintWidth_percent="0.75" />
+
+            <TextView
+                android:id="@+id/consolation"
+                style="@style/xLargeText"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:text="@string/consolation"
+                gift="@{handler.loss.gift}"
+                gift_message="@{@string/consolation}"
+                app:layout_constraintBottom_toTopOf="@id/giftText"
+                app:layout_constraintDimensionRatio="1:0.4"
+                app:layout_constraintEnd_toEndOf="@id/background"
+                app:layout_constraintStart_toStartOf="@id/background"
+                app:layout_constraintTop_toBottomOf="@id/soros"
+                app:layout_constraintWidth_percent="0.75" />
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/CloseButton"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/button"
+                android:enabled="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:0.3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/soros"
+                app:layout_constraintVertical_bias="0.9"
+                app:layout_constraintWidth_percent="0.9" />
+
+            <TextView
+                android:id="@+id/giftText"
+                style="@style/xLargeText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:elevation="3dp"
+                android:gravity="center_vertical"
+                android:text="@string/empty_loss"
+                android:maxLines="1"
+                gift="@{handler.loss.gift}"
+                gift_message="@{@string/get_gift}"
+                app:layout_constraintBottom_toBottomOf="@id/dollar"
+                app:layout_constraintEnd_toEndOf="@id/cancel"
+                app:layout_constraintHorizontal_bias="0.58"
+                app:layout_constraintStart_toStartOf="@id/cancel"
+                app:layout_constraintTop_toTopOf="@id/dollar"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <ImageView
+                android:id="@+id/dollar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:elevation="3dp"
+                android:src="@drawable/ic_dollar"
+                app:layout_constraintBottom_toBottomOf="@id/cancel"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toStartOf="@id/giftText"
+                app:layout_constraintHeight_percent="0.08"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="@id/cancel"
+                app:layout_constraintTop_toTopOf="@id/cancel"
+                app:layout_constraintVertical_bias="0.44" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+</layout>
