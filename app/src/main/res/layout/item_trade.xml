@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.panda.sleepy.demoforex.data.TradeModel" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/tradeUp"
+            style="@style/SmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.up}"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/tradeDivider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_light"
+            app:layout_constraintEnd_toEndOf="@id/tradeUp"
+            app:layout_constraintStart_toStartOf="@id/tradeUp"
+            app:layout_constraintTop_toBottomOf="@id/tradeUp" />
+
+        <TextView
+            android:id="@+id/tradeDown"
+            style="@style/SmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.down}"
+            app:layout_constraintTop_toBottomOf="@id/tradeDivider" />
+
+        <ImageView
+            android:id="@+id/tradeIcon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/ic_trade"
+            app:layout_constraintBottom_toBottomOf="@id/tradeDown"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toEndOf="@id/tradeDivider"
+            app:layout_constraintTop_toTopOf="@id/tradeUp" />
+
+        <TextView
+            android:id="@+id/profit"
+            style="@style/LargeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/tradeIcon"
+            app:layout_constraintStart_toEndOf="@id/tradeIcon"
+            app:layout_constraintTop_toTopOf="@id/tradeIcon"
+            profit="@{data.profit}"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>

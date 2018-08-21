@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 /*
  * Created by Anton Popov on 20.08.18.
@@ -27,5 +28,9 @@ public abstract class BaseFragment<T extends ViewDataBinding> extends Fragment {
     }
 
     protected abstract int getLayout();
+
+    protected void showToast(String message) {
+        Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+    }
 
 }

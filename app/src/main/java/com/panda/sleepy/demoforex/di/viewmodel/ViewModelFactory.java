@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProvider;
 import android.support.annotation.NonNull;
 import android.support.v4.util.ArrayMap;
 
+import com.panda.sleepy.demoforex.viewmodel.DealsViewModel;
 import com.panda.sleepy.demoforex.viewmodel.TransitionViewModel;
 
 import java.util.Map;
@@ -23,6 +24,7 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
     public ViewModelFactory(ViewModelComponent component) {
         creators = new ArrayMap<>();
         creators.put(TransitionViewModel.class, component::transitionViewModel);
+        creators.put(DealsViewModel.class, component::dealsViewModel);
     }
 
     @NonNull

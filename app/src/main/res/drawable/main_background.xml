@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="20dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="@color/blue_alpha_12"
+                android:startColor="@color/bunker_alpha_0" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="22dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ebony" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="22dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/atoll_alpha_40" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="22dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bunker_alpha_60" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/bg_dialog_blur" />
+</layer-list>

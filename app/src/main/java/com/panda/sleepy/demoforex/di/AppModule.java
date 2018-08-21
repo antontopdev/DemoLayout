@@ -4,6 +4,7 @@ import android.arch.lifecycle.ViewModelProvider;
 
 import com.panda.sleepy.demoforex.app.DemoApp;
 import com.panda.sleepy.demoforex.di.main.MainActivityComponent;
+import com.panda.sleepy.demoforex.di.main.deals.DealsComponent;
 import com.panda.sleepy.demoforex.di.viewmodel.ViewModelComponent;
 import com.panda.sleepy.demoforex.di.viewmodel.ViewModelFactory;
 import com.panda.sleepy.demoforex.util.InjectionHandler;
@@ -16,11 +17,13 @@ import dagger.Provides;
 /*
  * Created by Anton Popov on 17.08.18.
  */
+
 /**
  * Application module that control Activity and ViewModels injections.
  */
-@Module(subcomponents = { MainActivityComponent.class,
-        ViewModelComponent.class })
+@Module(subcomponents = {MainActivityComponent.class,
+        ViewModelComponent.class,
+        DealsComponent.class})
 public class AppModule {
 
     @Provides

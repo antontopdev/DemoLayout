@@ -4,11 +4,20 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!-- Main background color -->
     <color name="ebony">#060B14</color>
 
+    <!-- Colors for buttons -->
     <color name="calypso_alpha_20">#332e687d</color>
-
     <color name="white_alpha_50">#80ffffff</color>
     <color name="white_alpha_57">#92FFFFFF</color>
+    <color name="elephant">#104352</color>
+    <color name="picton_blue">#48D3EF</color>
+
+    <!-- Colors for dialog background -->
+    <color name="bunker_alpha_0">#000F141E</color>
+    <color name="blue_alpha_12">#1F00C0E7</color>
+    <color name="bunker_alpha_60">#990F141E</color>
+    <color name="atoll_alpha_40">#660A5C6E</color>
 
 </resources>

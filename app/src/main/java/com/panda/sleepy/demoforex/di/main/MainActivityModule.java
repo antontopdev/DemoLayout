@@ -13,10 +13,11 @@ import dagger.Provides;
 /*
  * Created by Anton Popov on 17.08.18.
  */
+
 /**
  * MainActivity module that control fragments injecting.
  */
-@Module (subcomponents = MenuComponent.class)
+@Module(subcomponents = {MenuComponent.class})
 public class MainActivityModule {
 
     @Provides

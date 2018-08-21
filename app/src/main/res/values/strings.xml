@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">DemoForex</string>
+    <string name="empty_trade">AUD</string>
+    <string name="empty_profit">- $99,00</string>
     
     <!-- Menu -->
     <string name="unsuccessful_deals">Неудачные сделки</string>
     <string name="big_loss">Крупная потеря</string>
+
+    <!-- Deals -->
+    <string name="deals_title">Три неудачные сделки подряд</string>
+    <string name="do_not_worry">Не переживай!</string>
+    <string name="george_soros">Самый изветсный трейдер в мире Джордж Сорос проигрывал куда больше и чаще. однако это не помешало ему стать самым успешным и известным игроком Forex</string>
+    <string name="more_info">Узнать больше о Соросе</string>
+    <string name="close">Закрыть окно</string>
 </resources>

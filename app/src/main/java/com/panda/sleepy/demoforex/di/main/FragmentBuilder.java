@@ -20,6 +20,6 @@ abstract class FragmentBuilder {
     @Binds
     @IntoMap
     @FragmentKey(MenuFragment.class)
-    abstract AndroidInjector.Factory<? extends Fragment> bindStatisticsProjectFragment(MenuComponent.Builder builder);
+    abstract AndroidInjector.Factory<? extends Fragment> bindMenuFragment(MenuComponent.Builder builder);
 
 }
